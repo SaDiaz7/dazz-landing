@@ -1,0 +1,249 @@
+.about h1, h2, p {
+    text-align: center;
+    padding-left: 700px;
+    padding-right: 700px;
+}
+body {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+}
+.hero {
+  background-image: url("images/portada1.png"); /* ruta a imagen */
+  height: 100vh;
+  background-size: cover;
+  background-position: center 20%;
+  position: relative;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* oscurece para que se lea mejor */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 5rem;
+  margin: 0;
+  letter-spacing: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: 300;
+}
+.about p {
+  font-size: 0.9rem;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+/*----------REDES SOCIALES----------*/
+.socials {
+  text-align: center;
+  margin-top: 30px;
+  background-color: #000;
+  padding: 20px 0;
+}
+.socials a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  margin: 0 15px;
+  transition: color 0.1s;
+}
+.socials a:hover {
+  cursor: pointer;
+  color: #110066; /* Spotify verde, se puede cambiar */
+}
+.social-icon i {
+  font-size: 32px;
+  color: #ffffff;
+  margin: 0 15px;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+.social-icon i:hover {
+  transform: scale(1.2);
+  color: #110066;
+}
+
+/*----------BOTON CONTRATAR----------*/
+.btn-contact {
+  display: inline-block;
+  background-color: #0c00b9;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  max-width: 90%;
+  margin: 20px auto;
+}
+.btn-contact:hover {
+  background-color: #110066;
+  transform: scale(1.05);
+}
+
+/*PORTADAS DE TRACKS, todo esto sirve para acomodar las imágenes*/
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+}
+.gallery img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/*----------PRINCIPAL----------*/
+hr {
+  height: 2px;
+  background-color: white;
+  border-color: white;
+  margin-right: auto;
+  margin-left: auto;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+h1, h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal; /* o 400 */
+}
+p, a, ul {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+/*----------ANIMACION----------*/
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*----------SPOTIFY PLAYER----------*/
+.spotify-player {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.spotify-player h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/*----------FOOTER----------*/
+.contact-form {
+  text-align: center;
+  padding: 40px 20px;
+}
+.contact-form h2 {
+  padding: 20px;
+}
+.contact-form form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  width: 100%;
+}
+.contact-form button {
+  padding: 12px;
+  background-color: #00f5d4;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.contact-form button:hover {
+  background-color: #06d6a0;
+  transform: scale(1.05);
+}
+footer{
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 48px;
+    letter-spacing: 4px;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  .about p {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .gallery img {
+    width: 80%;
+  }
+  .btn-contact {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  .socials {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .social-icon {
+    font-size: 24px;
+  }
+}
