@@ -17,7 +17,9 @@ Este es mi primer proyecto de desarrollo web, una landing page personalizada par
 
 ## 📸 Capturas
 
-![Desktop](images/screenshot-desktop.jpg)  
+![Desktop](CapturasDemo/Dazz1.jpg)
+![Desktop](CapturasDemo/Dazz2.jpg)
+![Desktop](CapturasDemo/Dazz3.jpg)
 
 
 ## ✒️ Autor
