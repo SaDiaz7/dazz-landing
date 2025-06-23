@@ -13,7 +13,6 @@ Este es mi primer proyecto de desarrollo web, una landing page personalizada par
 ## 🌐 Link al sitio
 
 👉 [Ver página online](https://sadiaz7.github.io/dazz-landing/)  
-(Reemplazá este link con el real)
 
 ## 📸 Capturas
 
